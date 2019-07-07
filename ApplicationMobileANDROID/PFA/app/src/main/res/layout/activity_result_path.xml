@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".ResultPath">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/ResultPath"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:textSize="30dp"
+            app:fontFamily="@font/neo_latina"
+            />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/resultAlgoAStar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffff"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/RedoAstar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recalculer A*"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/white"
+                    android:textAllCaps="false"
+                    android:visibility="invisible"
+                    android:textSize="25dp"/>
+
+                <Button
+                    android:id="@+id/autoToMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quitter ce mode"
+                    android:background="@android:color/white"
+                    android:textAllCaps="false"
+                    android:visibility="invisible"
+                    android:textSize="25dp"/>
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>
